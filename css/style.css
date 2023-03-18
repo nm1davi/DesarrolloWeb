@@ -1,74 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
 *{
-    margin: 0px;
-    padding: 0px;
+  margin: 0.2%;
+  padding: 0.2%;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
-.container{
-    width: 90%;
-    height: 100vh;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.25fr 2fr 0.50fr;
+/* Estilos para el body */
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #2c3e50;
+  color: #fff;
 }
 
-.header{
-    background-color: blue;
-    /* display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-between; */
+/* Estilos para el header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #34495e;
 }
 
-.contenedorLogo img{
-    width: 10%;
-    height:60%;
-    object-fit: cover;
+.contenedorLogo img {
+  height: 20vh;
 }
 
-.contenedorTitulo{
-    text-decoration: none;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 10px;
-    
+.contenedorTitulo {
+  display: flex;
 }
 
-.botones{
-    margin-right: 1%;
-    background-color: blueviolet;
-    text-decoration: none;
-    padding-right: 20px;
-    color: black;
+.contenedorSubtitulos {
+  display: flex;
+
+  flex-direction: column;
+  text-align: center;
 }
 
-.main{
-    background-color: aqua;
+.contenedorTablas {
+  width: 100%;
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: 33.3% 33.3% 33.3%;
 }
 
-.tituloMain{
-    text-align: center;
+.botones {
+  margin-left: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
 }
 
-.tarjetas{
-    display: flex;
-    margin-top: 5%;
-    justify-content: space-around;
+/* Estilos para el main */
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-.botonesMain{
-    margin-top: 2%;
-    display: flex;
-    justify-content: space-around;
+.tituloMain {
+  margin-bottom: 30px;
+  text-align: center;
 }
 
-.botones1{
-    background-color: blueviolet;
-    text-decoration: none;
-    color: black;
+.tituloMain h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
-.footer{
-    background-color: rgb(81, 255, 0);
+.tarjetas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.tarjetas div {
+  margin: 0 10px;
+}
+
+.tarjetas img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.botonesMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botones1 {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #2c3e50;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.botones1:hover {
+  background-color: #34495e;
+}
+
+.contenedorMapa {
+  display: grid;
+  grid-template-rows: 1fr, 1fr;
+}
+
+.contedorMapaFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+  align-items: center;
+}
+
+.ContenedorMain {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "contenedorImagenMain textoImagenMain";
+}
+
+.contenedorImagenMain {
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  grid-area: contenedorImagenMain;
+}
+
+.textoImagenMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: textoImagenMain;
+  font-size: medium;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Estilos para el footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: normal;
+  padding: 20px;
+  background-color: #34495e;
+}
+
+.redes-sociales a {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.redes-sociales a:hover {
+  color: #ccc;
 }
