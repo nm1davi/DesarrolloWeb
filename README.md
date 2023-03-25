@@ -1,3 +1,7 @@
 # Practica Desarrollo
-Hice las 5 HTML, y agregué lo que me dijiste en la entrega anterior.
-Lo de esta entrega está en index.html
+Corregi lo que me dijiste, 
+Agregue texto en las pages
+Aplique hover
+Complete los alt
+Agregue botones para navegar mejor de pagina a pagina
+

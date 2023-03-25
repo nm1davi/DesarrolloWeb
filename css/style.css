@@ -22,19 +22,98 @@ body {
   background-color: #34495e;
 }
 
+.container {  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  align-items: stretch;
+  width: 100%;
+  grid-template-areas: "column1 column2 column3";
+}
+
 .contenedorLogo img {
   height: 20vh;
 }
 
 .contenedorTitulo {
   display: flex;
+  justify-content: center;
 }
+
+.contenedorTituloMain{
+  grid-column: 1/4;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  border: 2px solid rgb(105, 105, 105);
+  border-width: 10px;
+  border-style: double;
+}
+
+
+.img-main{
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  border-color: black black black black;
+  border-width: 6px 6px 6px 6px;
+  border-style: outset outset outset outset;
+}
+
+.botones-main{
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+/*** ESTILOS BOTÓN GROW SKEW REVERSE ***/
+.ov-btn-grow-skew-reverse {
+  background: #2c3e50; /* color de fondo */
+  color: #ffffff; /* color de fuente */
+  border: 2px solid #2c3e50; /* tamaño y color de borde */
+  padding: 6px 15px;
+  border-radius: 3px; /* redondear bordes */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+  border-color: black black black black;
+  border-width: 2px 2px 2px 2px;
+  border-style: ridge ridge ridge ridge;
+}
+.ov-btn-grow-skew-reverse:hover {
+  color: #fff;/* color de fuente hover */
+}
+.ov-btn-grow-skew-reverse::after {
+  content: "";
+  background: #262c31; /* color de fondo hover */
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(45deg) scale(0, 1);
+  transition: all 0.3s ease;
+}
+.ov-btn-grow-skew-reverse:hover::after {
+  transition: all 0.3s ease-out;
+  transform: skewX(45deg) scale(1, 1);
+}
+
 
 .contenedorSubtitulos {
   display: flex;
-
   flex-direction: column;
-  text-align: center;
+  text-align: start;
 }
 
 .contenedorTablas {
@@ -44,20 +123,11 @@ body {
   grid-template-columns: 33.3% 33.3% 33.3%;
 }
 
-.botones {
-  margin-left: 20px;
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-}
 
-/* Estilos para el main */
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+
+.listaFerretera{
+  list-style: none;
+  text-align: start;
 }
 
 .tituloMain {
@@ -118,34 +188,31 @@ body {
 }
 
 .contedorMapaFlex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-column: 1/4;
+  text-align: center;
+  border: #000000 4px;
+  border-style: outset;
 }
 
-.ContenedorMain {
-  display: grid;
-  grid-template-columns: 0.8fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "contenedorImagenMain textoImagenMain";
+.mapa{
+  width: 99%;
 }
+
 
 .contenedorImagenMain {
-  margin: 1%;
-  display: flex;
-  flex-direction: column;
-  grid-area: contenedorImagenMain;
+  grid-column: 1/2;
+  width: 100%;
+  text-align: center;
+}
+
+.imagenNegocio{
+  height: 500px;
+  width: 100%;
 }
 
 .textoImagenMain {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  grid-area: textoImagenMain;
+  grid-column: 2/4;
   font-size: medium;
   font-family: 'Nunito Sans', sans-serif;
 }
