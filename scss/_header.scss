@@ -1,0 +1,13 @@
+/* Estilos para el header */
+@import "mixins.scss";
+.header {
+    @include caracteristicas(flex, space-between, center, 20px,#34495e);
+ 
+    .contenedorTitulo {
+      display: $display-flex;
+      justify-content: $justify-content-center;
+    }
+    .contenedorLogo img {
+      height: $height-contedor-logo;
+    }
+  }

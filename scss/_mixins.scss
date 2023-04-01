@@ -1,0 +1,7 @@
+@mixin caracteristicas($display, $justify, $align, $padding, $background){
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+    padding: $pading;
+    background-color: $background;
+}

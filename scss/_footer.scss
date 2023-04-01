@@ -1,0 +1,14 @@
+/* Estilos para el footer */
+.footer {
+    @include caracteristicas($display-flex,$justify-content-center,$align-items-normal,$pading, $color-secundario);
+    flex-direction: $flex-direction-column;
+    .redes-sociales a {
+        margin: $margin-redes-sociales;
+        font-size: $font-size-redes-sociales;
+        color: $color-blanco;
+        &:hover {
+            color: $color-gris;
+          }
+      }
+  }
+  

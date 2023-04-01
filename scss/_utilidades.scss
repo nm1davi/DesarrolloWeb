@@ -1,0 +1,44 @@
+.container {  
+    display: $display-grid;
+    grid-template-columns: $grid-template-columns;
+    grid-template-rows: $grid-template-rows;
+    grid-auto-columns: $grid-auto-columns;
+    width: $width-container;
+  }
+
+  /*** ESTILOS BOTÓN GROW SKEW REVERSE ***/
+.ov-btn-grow-skew-reverse {
+  background: $color-primario; /* color de fondo */
+  color: $color-blanco; /* color de fuente */
+  border: map-get($borders,border-ov-btn-grow-skew-reverse); /* tamaño y color de borde */
+  padding: $pading-ov-btn-grow-skew-reverse;
+  border-radius:map-get($borders,border-radius-ov-btn-grow-skew-reverse);/* redondear bordes */
+  position: $position-relative;
+  z-index: $z-index1;
+  overflow: $overflow;
+  display: $display-inline-block;
+  border-color: $color-negro $color-negro $color-negro $color-negro;
+  border-width: map-get($borders,border-radius-ov-btn-grow-skew-reverse-width);
+  border-style:map-get($borders,border-radius-ov-btn-grow-skew-reverse-style);
+}
+.ov-btn-grow-skew-reverse:hover {
+  color: $color-blanco;/* color de fuente hover */
+}
+.ov-btn-grow-skew-reverse::after {
+  content: $content;
+  background: $color-gris-claro; /* color de fondo hover */
+  position: $position-absolute;
+  z-index: $z-index-1;
+  padding: $pading-ov-btn-grow-skew-reverse-after;
+  display: $display-block;
+  left: $left;
+  right: $right;
+  top: $top;
+  bottom: $bottom;
+  transform: $transform;
+  transition: $transition;
+}
+.ov-btn-grow-skew-reverse:hover::after {
+  transition: $transition-hover;
+  transform: $transform-hover;
+}

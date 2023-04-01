@@ -1,0 +1,74 @@
+/* Estilos para el Main */
+
+  
+  .contenedorTituloMain{
+    grid-column: 1/4;
+    background-color: $color-negro;
+    text-align: $text-align-center;
+    border: map-get($borders, border-cont-tit-main);
+    border-width: map-get($borders, border-cont-tit-main-width);
+    border-style: map-get($borders, border-cont-tit-main-style);
+  }
+  
+  .botones-main{
+    text-decoration: $text-decoration-none;
+    display: $display-flex;
+    flex-direction: $flex-direction-row;
+    justify-content: $justify-content-space-around;
+  }
+  
+  .img-main{
+    display: $display-flex;
+    flex-direction: $flex-direction-column;
+    height: $height-img-main;
+    align-items: $align-items-center;
+    justify-content: $justify-content-center;
+    border-color: $color-negro $color-negro $color-negro $color-negro;
+    border-width: map-get($borders, border-img-main-width);
+    border-style: map-get($borders, border-img-main-style);
+  }
+  
+
+  .contenedorSubtitulos {
+    display: $display-flex;
+    flex-direction: $flex-direction-column;
+    text-align: $text-align-start;
+    .listaFerretera{
+        list-style: $list-style-none;
+        text-align: $text-align-start;
+      }
+  }
+  
+  .contenedorTablas {
+    width: $width-cpntenedor-tabla;
+    display: $display-grid;
+    grid-gap: $grid-gap;
+    grid-template-columns: $grid-template-columns-contenedor-tabla;
+  }
+  
+ 
+  
+  .contedorMapaFlex {
+    display: $display-grid;
+    grid-column: 1/4;
+    text-align: $text-align-center;
+    border: map-get($borders,border-contedor-mapa);
+    border-style:map-get($borders,border-contedor-mapa-style);
+    .mapa{
+        width: $width-mapa;
+      }
+  }
+  
+  
+  
+  .imagenNegocio{
+    height: $height-img-negocio;
+    width: $width-img-negocio;
+  }
+  
+  .textoImagenMain {
+    grid-column: 2/4;
+    font-size: $font-size-medium;
+    font-family: $font-family;
+  }
+  
