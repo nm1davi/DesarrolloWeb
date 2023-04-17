@@ -8,3 +8,4 @@
 8-Agregue Form en contacto
 9-Corregí lo de la pagina de nostros.
 10-Agregue imagenes en las paginas (herrajes, ferreteria, maquinaria)
+11-Mi pagina esta logueada en netlify : ferreteriadavi.netlify.app (ese es el nombre)
