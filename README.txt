@@ -5,4 +5,6 @@
 5-Utilice mixin en el footer y en el header. (caracteristicas)
 6-Utilice animaciones en las redes sociales (whatasapp y gmail) utilice Animate.css
 7-Aplique SEO (Description, KW,)
-
+8-Agregue Form en contacto
+9-Corregí lo de la pagina de nostros.
+10-Agregue imagenes en las paginas (herrajes, ferreteria, maquinaria)
